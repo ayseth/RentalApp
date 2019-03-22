@@ -14,9 +14,6 @@ namespace RentalApp.Controllers
         {
             var movie = new Movie() {Name = "Shrek!"};
 
-            var viewResult = new ViewResult();
-            ViewResult.ViewData.Model  //the movie object passed below will be aassigned to "Model" here, the "View" method below will take care of this so this line is not necessary
-
             return View(movie);
         }
 
