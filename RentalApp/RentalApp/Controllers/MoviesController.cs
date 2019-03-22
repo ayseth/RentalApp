@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using RentalApp.Models;
+using RentalApp.ViewModels;
 
 namespace RentalApp.Controllers
 {
@@ -13,8 +14,19 @@ namespace RentalApp.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() {Name = "Shrek!"};
+            var customers = new List<Customer>
+            {
+                new Customer {Name = "Customer 1"},
+                new Customer {Name = "Customer 2"}
+            };
 
-            return View(movie);
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+
+            return View(viewModel);
         }
 
         [Route("movies/released/{year}/{month:regex(\\d{4}):range(1, 12}")]
