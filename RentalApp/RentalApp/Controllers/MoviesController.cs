@@ -14,10 +14,7 @@ namespace RentalApp.Controllers
         {
             var movie = new Movie() {Name = "Shrek!"};
 
-            ViewData["randomMovie"] = movie;
-            ViewBag.Movie = movie; //movie property is added to run bag at runtime, so no compile time safety
-
-            return View();
+            return View(movie);
         }
 
         [Route("movies/released/{year}/{month:regex(\\d{4}):range(1, 12}")]
