@@ -1,8 +1,11 @@
-﻿@model RentalApp.Models.Movie
+﻿@using RentalApp.Models
+@model RentalApp.Models.Movie
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Name</h2>
+<h2>@( ((Movie) ViewData["Movie"]).Name )</h2> <!--if a change happens in the controller, we have to manually change it here as well, so this way is fragile => X-->
+@Model.Name
+@ViewBag.RandomMovie <!--changes occur here is a change occured in controller file, casting issue persists => X -->
 
