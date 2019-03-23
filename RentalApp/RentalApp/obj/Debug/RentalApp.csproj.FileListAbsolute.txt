@@ -53,3 +53,9 @@ c:\users\a.y seth\desktop\RentalApp\RentalApp\RentalApp\bin\Microsoft.Owin.Secur
 c:\users\a.y seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.csprojResolveAssemblyReference.cache
 c:\users\a.y seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.dll
 c:\users\a.y seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.pdb
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.InitialModel.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.csproj.GenerateResource.Cache
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.AddIsSubscribedToCustomer.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.AddMembershipType.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.PopulateMembershipTypes.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.ApplyAnnotationsToCustomerName.resources
