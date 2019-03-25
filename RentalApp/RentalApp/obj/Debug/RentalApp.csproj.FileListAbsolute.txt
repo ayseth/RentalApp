@@ -73,3 +73,6 @@ C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migr
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.EditedMovieDB1.resources
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.RemovedGenreID.resources
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.AddedMovies.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.AddedMembershipTypes.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.AddedBirthdayToCustomer.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Debug\RentalApp.Migrations.AddedBirthday.resources

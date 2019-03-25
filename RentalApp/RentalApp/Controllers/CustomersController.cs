@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using RentalApp.Models;
+using RentalApp.ViewModels;
 
 namespace RentalApp.Controllers
 {
@@ -23,7 +24,12 @@ namespace RentalApp.Controllers
 
         public ActionResult New()
         {
-            return View();
+            var membershipTypes = _context.MembershipType.ToList();
+            var viewModel = new NewCustomerViewModel
+            {
+                MembershipType = membershipTypes
+            };
+            return View(viewModel);
         }
         // GET: Customers
         public ViewResult Index()

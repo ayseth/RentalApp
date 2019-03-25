@@ -1,5 +1,5 @@
 ﻿
-@model RentalApp.Models.Customer
+@model RentalApp.ViewModels.NewCustomerViewModel
 @{
     ViewBag.Title = "New";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,20 +11,25 @@
 @using (Html.BeginForm("Create", "Customers"))  //<!--rendered a beginning form tag-->
 {
     <div class="form-group">
-        @Html.LabelFor(m => m.Name)
-        @Html.TextBoxFor(m => m.Name, new { @class= "form-control"}) @*TextBoxFor --- automatically suports validation for that field in contrast to raw html*@
+        @Html.LabelFor(m => m.Customer.Name)
+        @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" }) @*TextBoxFor --- automatically suports validation for that field in contrast to raw html*@
     </div>
 
     <div class="form-group">
-        <label for="Birthday">Date of Birth</label>
-        @Html.TextBoxFor(m => m.Birthday, new { @class = "form-control" }) 
+        @Html.LabelFor(m => m.Customer.Birthday)
+        @Html.TextBoxFor(m => m.Customer.Birthday, new { @class = "form-control" }) 
     </div>
 
 
     <div>
         <label>
-            @Html.CheckBoxFor(m => m.IsSubscribedToNewsLetter) Subscribed to Newsletter
+            @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsLetter) Subscribed to Newsletter
 
         </label>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.MembershipTypeId)
+        @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList(Model.MembershipType, "Id", "Name"), "Select Membership Type", new { @class = "form-control" })
     </div>
 }
