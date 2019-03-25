@@ -186,8 +186,65 @@
     <Compile Include="Migrations\201903231731237_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201903231731237_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903250712482_AddedNameToMembershipType.cs" />
+    <Compile Include="Migrations\201903250712482_AddedNameToMembershipType.Designer.cs">
+      <DependentUpon>201903250712482_AddedNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903250714459_AddedNameToMembershipType1.cs" />
+    <Compile Include="Migrations\201903250714459_AddedNameToMembershipType1.Designer.cs">
+      <DependentUpon>201903250714459_AddedNameToMembershipType1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903250721401_ApplyAnnotationsToCMembershipTypeName.cs" />
+    <Compile Include="Migrations\201903250721401_ApplyAnnotationsToCMembershipTypeName.Designer.cs">
+      <DependentUpon>201903250721401_ApplyAnnotationsToCMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903250729354_AddedBirthdaytoCustomers.cs" />
+    <Compile Include="Migrations\201903250729354_AddedBirthdaytoCustomers.Designer.cs">
+      <DependentUpon>201903250729354_AddedBirthdaytoCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903250732550_AddedBirthdaytoCustomers1.cs" />
+    <Compile Include="Migrations\201903250732550_AddedBirthdaytoCustomers1.Designer.cs">
+      <DependentUpon>201903250732550_AddedBirthdaytoCustomers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251526404_EditedBirthdayDatatoCustomers.cs" />
+    <Compile Include="Migrations\201903251526404_EditedBirthdayDatatoCustomers.Designer.cs">
+      <DependentUpon>201903251526404_EditedBirthdayDatatoCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251528263_EditedBirthdayDatatoCustomers2.cs" />
+    <Compile Include="Migrations\201903251528263_EditedBirthdayDatatoCustomers2.Designer.cs">
+      <DependentUpon>201903251528263_EditedBirthdayDatatoCustomers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251531443_EditedBirthdayDatatoCustomers21.cs" />
+    <Compile Include="Migrations\201903251531443_EditedBirthdayDatatoCustomers21.Designer.cs">
+      <DependentUpon>201903251531443_EditedBirthdayDatatoCustomers21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251538538_AddedColumnsToMovieDB.cs" />
+    <Compile Include="Migrations\201903251538538_AddedColumnsToMovieDB.Designer.cs">
+      <DependentUpon>201903251538538_AddedColumnsToMovieDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251549332_AddedGenreTable.cs" />
+    <Compile Include="Migrations\201903251549332_AddedGenreTable.Designer.cs">
+      <DependentUpon>201903251549332_AddedGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251552519_EditedMovieDB.cs" />
+    <Compile Include="Migrations\201903251552519_EditedMovieDB.Designer.cs">
+      <DependentUpon>201903251552519_EditedMovieDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251558209_EditedMovieDB1.cs" />
+    <Compile Include="Migrations\201903251558209_EditedMovieDB1.Designer.cs">
+      <DependentUpon>201903251558209_EditedMovieDB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251606399_RemovedGenreID.cs" />
+    <Compile Include="Migrations\201903251606399_RemovedGenreID.Designer.cs">
+      <DependentUpon>201903251606399_RemovedGenreID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903251615248_AddedMovies.cs" />
+    <Compile Include="Migrations\201903251615248_AddedMovies.Designer.cs">
+      <DependentUpon>201903251615248_AddedMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -286,6 +343,48 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903231731237_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201903231731237_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903250712482_AddedNameToMembershipType.resx">
+      <DependentUpon>201903250712482_AddedNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903250714459_AddedNameToMembershipType1.resx">
+      <DependentUpon>201903250714459_AddedNameToMembershipType1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903250721401_ApplyAnnotationsToCMembershipTypeName.resx">
+      <DependentUpon>201903250721401_ApplyAnnotationsToCMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903250729354_AddedBirthdaytoCustomers.resx">
+      <DependentUpon>201903250729354_AddedBirthdaytoCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903250732550_AddedBirthdaytoCustomers1.resx">
+      <DependentUpon>201903250732550_AddedBirthdaytoCustomers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251526404_EditedBirthdayDatatoCustomers.resx">
+      <DependentUpon>201903251526404_EditedBirthdayDatatoCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251528263_EditedBirthdayDatatoCustomers2.resx">
+      <DependentUpon>201903251528263_EditedBirthdayDatatoCustomers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251531443_EditedBirthdayDatatoCustomers21.resx">
+      <DependentUpon>201903251531443_EditedBirthdayDatatoCustomers21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251538538_AddedColumnsToMovieDB.resx">
+      <DependentUpon>201903251538538_AddedColumnsToMovieDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251549332_AddedGenreTable.resx">
+      <DependentUpon>201903251549332_AddedGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251552519_EditedMovieDB.resx">
+      <DependentUpon>201903251552519_EditedMovieDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251558209_EditedMovieDB1.resx">
+      <DependentUpon>201903251558209_EditedMovieDB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251606399_RemovedGenreID.resx">
+      <DependentUpon>201903251606399_RemovedGenreID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251615248_AddedMovies.resx">
+      <DependentUpon>201903251615248_AddedMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
