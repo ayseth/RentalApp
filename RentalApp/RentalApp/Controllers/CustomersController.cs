@@ -40,8 +40,13 @@ namespace RentalApp.Controllers
             else                    //for existing customer
             {
                 //first get from DB, so dbcontext can track changes and then modify property & save
-                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);  //used single instead of singleordefult so if the customer is not found, and exception will occur 
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);  //used single
+                                                                                         //instead of singleordefult so
+                                                                                         //if the customer is not found,
+                                                                                         //and exception will occur 
 
+                TryUpdateModel(customerInDb);  //the properties of this obj will be updated based on the key value pairs in
+                                               //req data, appears on ASP MS site, not preferred as issues arise
             }
             _context.Customers.Add(customer);  //similar to  db.session.add in python
             _context.SaveChanges();            // similar to  db.session.commit() in python
