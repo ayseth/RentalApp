@@ -33,7 +33,7 @@ namespace RentalApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(NewCustomerViewModel viewModel) //called Model binding
+        public ActionResult Create(Customer customer) //called Model binding
         {
             return View();
         }
