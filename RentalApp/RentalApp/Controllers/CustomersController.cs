@@ -36,7 +36,7 @@ namespace RentalApp.Controllers
         public ActionResult Save(Customer customer) //called Model binding
         {
             if (customer.Id == 0)   //for a new customer
-                _context.Customers.Add(customer);
+                _context.Customers.Add(customer);     //similar to  db.session.add in python
             else                    //for existing customer
             {
                 //first get from DB, so dbcontext can track changes and then modify property & save
@@ -44,11 +44,11 @@ namespace RentalApp.Controllers
                                                                                          //instead of singleordefult so
                                                                                          //if the customer is not found,
                                                                                          //and exception will occur 
-
-                TryUpdateModel(customerInDb);  //the properties of this obj will be updated based on the key value pairs in
-                                               //req data, appears on ASP MS site, not preferred as issues arise
-            }
-            _context.Customers.Add(customer);  //similar to  db.session.add in python
+                customerInDb.Name = customer.Name;
+                customerInDb.Birthday = customer.Birthday;
+                customerInDb.MembershipTypeId = customer.MembershipTypeId;
+                customerInDb.IsSubscribedToNewsLetter = customer.IsSubscribedToNewsLetter;
+                  }
             _context.SaveChanges();            // similar to  db.session.commit() in python
 
             return RedirectToAction("Index", "Customers"); //redirect to page
