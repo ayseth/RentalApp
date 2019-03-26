@@ -31,6 +31,12 @@ namespace RentalApp.Controllers
             };
             return View(viewModel);
         }
+
+        [HttpPost]
+        public ActionResult Create(NewCustomerViewModel viewModel) //called Model binding
+        {
+            return View();
+        }
         // GET: Customers
         public ViewResult Index()
         {
