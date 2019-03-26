@@ -33,8 +33,16 @@ namespace RentalApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Customer customer) //called Model binding
+        public ActionResult Save(Customer customer) //called Model binding
         {
+            if (customer.Id == 0)   //for a new customer
+                _context.Customers.Add(customer);
+            else                    //for existing customer
+            {
+                //first get from DB, so dbcontext can track changes and then modify property & save
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);  //used single instead of singleordefult so if the customer is not found, and exception will occur 
+
+            }
             _context.Customers.Add(customer);  //similar to  db.session.add in python
             _context.SaveChanges();            // similar to  db.session.commit() in python
 
