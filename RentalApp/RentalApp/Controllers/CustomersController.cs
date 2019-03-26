@@ -25,17 +25,20 @@ namespace RentalApp.Controllers
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipType.ToList();
-            var viewModel = new NewCustomerViewModel
+            var viewModel = new CustomerFormViewModel
             {
                 MembershipType = membershipTypes
             };
-            return View(viewModel);
+            return View("CustomerForm",viewModel);
         }
 
         [HttpPost]
         public ActionResult Create(Customer customer) //called Model binding
         {
-            return View();
+            _context.Customers.Add(customer);  //similar to  db.session.add in python
+            _context.SaveChanges();            // similar to  db.session.commit() in python
+
+            return RedirectToAction("Index", "Customers"); //redirect to page
         }
         // GET: Customers
         public ViewResult Index()
@@ -55,6 +58,21 @@ namespace RentalApp.Controllers
                 return HttpNotFound();
 
             return View(customer);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            var viewModel = new CustomerFormViewModel
+            {
+                Customer = customer,
+                MembershipType = _context.MembershipType.ToList()
+            };
+            return View("CustomerForm", viewModel);  //without this, MVC will look for 'Edit' view
         }
     }
 }

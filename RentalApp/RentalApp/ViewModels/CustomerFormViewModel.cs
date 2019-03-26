@@ -6,7 +6,7 @@ using RentalApp.Models;
 
 namespace RentalApp.ViewModels
 {
-    public class NewCustomerViewModel
+    public class CustomerFormViewModel
     {
         public IEnumerable<MembershipType> MembershipType { get; set; }
         public Customer Customer { get; set; }
