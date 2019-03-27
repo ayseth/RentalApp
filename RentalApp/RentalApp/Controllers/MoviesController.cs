@@ -22,6 +22,12 @@ namespace RentalApp.Controllers
         {
             _context.Dispose();
         }
+
+        public ActionResult NewMovie()
+        {
+            return View();
+        }
+
         public ViewResult Index()
         {
             var movies = _context.Movies.Include(m => m.Genre).ToList();

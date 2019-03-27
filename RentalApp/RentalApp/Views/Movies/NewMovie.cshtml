@@ -1,0 +1,28 @@
+﻿@model RentalApp.Models.Movie
+@{
+    ViewBag.Title = "NewMovie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Movie</h2>
+
+@using (Html.BeginForm("Create", "Movies"))
+{
+    <div clas="form-control">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control"})
+    </div>
+    <div clas="form-control">
+        @Html.LabelFor(m => m.ReleaseDate)
+        @Html.TextBoxFor(m => m.ReleaseDate, new { @class = "form-control" })
+    </div>
+    <div clas="form-control">
+        @Html.LabelFor(m => m.Genre)
+        @Html.TextBoxFor(m => m.Genre, new { @class = "form-control" })
+    </div>
+    <div clas="form-control">
+        @Html.LabelFor(m => m.NumberInStock)
+        @Html.TextBoxFor(m => m.NumberInStock, new { @class = "form-control" })
+    </div>
+}
+
