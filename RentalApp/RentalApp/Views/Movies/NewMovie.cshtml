@@ -1,12 +1,11 @@
 ﻿@model RentalApp.ViewModels.NewMovieViewModel
 @{
-    ViewBag.Title = "NewMovie";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = Model.Title;
+    
 }
+<h2>@Model.Title</h2>
 
-<h2>New Movie</h2>
-
-@using (Html.BeginForm("Create", "Movies"))
+@using (Html.BeginForm("Save", "Movies"))
 {
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.Name)
@@ -24,6 +23,7 @@
         @Html.LabelFor(m => m.Movie.NumberInStock)
         @Html.TextBoxFor(m => m.Movie.NumberInStock, new { @class = "form-control" })
     </div>
+    @Html.HiddenFor(m => m.Movie.Id)
     <button type="submit" class="btn btn-primary">Save</button>
 }
 

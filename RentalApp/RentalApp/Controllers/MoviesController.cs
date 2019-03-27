@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using RentalApp.Migrations;
 using RentalApp.Models;
 using RentalApp.ViewModels;
 
@@ -34,9 +35,20 @@ namespace RentalApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Movie movie)
+        public ActionResult Save(Movie movie)
         {
-            _context.Movies.Add(movie);
+            if (movie.Id == 0) 
+                _context.Movies.Add(movie);
+            else
+            {
+                var movieInDb = _context.Movies.Single(c => c.Id == movie.Id);
+
+
+                movieInDb.Name = movie.Name;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
+                movieInDb.Genre = movie.Genre;
+                movieInDb.NumberInStock = movie.NumberInStock;
+            }
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Movies");

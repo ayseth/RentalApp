@@ -75,3 +75,4 @@ C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Mi
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.csproj.GenerateResource.Cache
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.dll
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.pdb
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.csprojResolveAssemblyReference.cache
