@@ -254,6 +254,10 @@
     <Compile Include="Migrations\201903252033286_AddedBirthday.Designer.cs">
       <DependentUpon>201903252033286_AddedBirthday.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903272050233_EditedMovieDB2.cs" />
+    <Compile Include="Migrations\201903272050233_EditedMovieDB2.Designer.cs">
+      <DependentUpon>201903272050233_EditedMovieDB2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -410,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903252033286_AddedBirthday.resx">
       <DependentUpon>201903252033286_AddedBirthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903272050233_EditedMovieDB2.resx">
+      <DependentUpon>201903272050233_EditedMovieDB2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
