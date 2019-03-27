@@ -30,13 +30,13 @@ namespace RentalApp.Controllers
             {
                 Genre = genre
             };
-            return View(viewModel);
+            return View("NewMovie", viewModel);
         }
 
         [HttpPost]
         public ActionResult Create(Movie movie)
         {
-            _context.Customers.Add(movie);
+            _context.Movies.Add(movie);
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Movies");
@@ -57,6 +57,21 @@ namespace RentalApp.Controllers
                 return HttpNotFound();
 
             return View(movie);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+            var viewModel = new NewMovieViewModel
+            {
+                Movie = movie,
+                Genre = _context.Genre.ToList()
+            };
+
+            return View("NewMovie", viewModel);
         }
 
         // GET: Movies/Random
