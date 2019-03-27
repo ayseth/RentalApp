@@ -25,7 +25,12 @@ namespace RentalApp.Controllers
 
         public ActionResult NewMovie()
         {
-            return View();
+            var genre = _context.Genre.ToList();
+            var viewModel = new NewMovieViewModel
+            {
+                Genre = genre
+            };
+            return View(viewModel);
         }
 
         public ViewResult Index()

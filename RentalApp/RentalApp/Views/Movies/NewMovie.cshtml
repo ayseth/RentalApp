@@ -1,4 +1,4 @@
-﻿@model RentalApp.Models.Movie
+﻿@model RentalApp.ViewModels.NewMovieViewModel
 @{
     ViewBag.Title = "NewMovie";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,21 +8,21 @@
 
 @using (Html.BeginForm("Create", "Movies"))
 {
-    <div clas="form-control">
-        @Html.LabelFor(m => m.Name)
-        @Html.TextBoxFor(m => m.Name, new { @class = "form-control"})
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.Name)
+        @Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control" })
     </div>
-    <div clas="form-control">
-        @Html.LabelFor(m => m.ReleaseDate)
-        @Html.TextBoxFor(m => m.ReleaseDate, new { @class = "form-control" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.ReleaseDate)
+        @Html.TextBoxFor(m => m.Movie.ReleaseDate, new { @class = "form-control" })
     </div>
-    <div clas="form-control">
-        @Html.LabelFor(m => m.Genre)
-        @Html.TextBoxFor(m => m.Genre, new { @class = "form-control" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.Genre)
+        @Html.DropDownListFor(m => m.Movie.Genre, new SelectList(Model.Genre, "Id", "Name"), "Select Genre", new { @class = "form-control" })
     </div>
-    <div clas="form-control">
-        @Html.LabelFor(m => m.NumberInStock)
-        @Html.TextBoxFor(m => m.NumberInStock, new { @class = "form-control" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.NumberInStock)
+        @Html.TextBoxFor(m => m.Movie.NumberInStock, new { @class = "form-control" })
     </div>
 }
 
