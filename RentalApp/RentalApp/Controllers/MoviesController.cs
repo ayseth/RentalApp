@@ -36,7 +36,10 @@ namespace RentalApp.Controllers
         [HttpPost]
         public ActionResult Create(Movie movie)
         {
-            return View();
+            _context.Customers.Add(movie);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Movies");
         }
 
         public ViewResult Index()
