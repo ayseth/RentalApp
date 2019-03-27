@@ -33,6 +33,12 @@ namespace RentalApp.Controllers
             return View(viewModel);
         }
 
+        [HttpPost]
+        public ActionResult Create(Movie movie)
+        {
+            return View();
+        }
+
         public ViewResult Index()
         {
             var movies = _context.Movies.Include(m => m.Genre).ToList();
