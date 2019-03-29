@@ -27,6 +27,7 @@ namespace RentalApp.Controllers
             var membershipTypes = _context.MembershipType.ToList();
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipType = membershipTypes
             };
             return View("CustomerForm",viewModel);
