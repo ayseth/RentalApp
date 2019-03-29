@@ -34,6 +34,7 @@ namespace RentalApp.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer) //called Model binding
         {
             // model state property to get access to validation data
