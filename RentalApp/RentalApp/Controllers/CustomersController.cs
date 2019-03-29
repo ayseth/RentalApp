@@ -35,6 +35,18 @@ namespace RentalApp.Controllers
         [HttpPost]
         public ActionResult Save(Customer customer) //called Model binding
         {
+            // model state property to get access to validation data
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new CustomerFormViewModel
+                {
+                    Customer = customer, //reqiured to populate the form with values user has put in the form
+                    MembershipType = _context.MembershipType.ToList()
+                };
+
+                return View("CustomerForm", viewModel);
+            }
+
             if (customer.Id == 0)   //for a new customer
                 _context.Customers.Add(customer);     //similar to  db.session.add in python
             else                    //for existing customer
