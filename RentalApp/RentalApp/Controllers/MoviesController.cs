@@ -29,6 +29,7 @@ namespace RentalApp.Controllers
             var genre = _context.Genre.ToList();
             var viewModel = new NewMovieViewModel
             {
+                Movie = new Movie(),
                 Genre = genre
             };
             return View("NewMovie", viewModel);
