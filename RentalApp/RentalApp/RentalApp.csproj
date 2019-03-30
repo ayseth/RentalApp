@@ -258,6 +258,14 @@
     <Compile Include="Migrations\201903272050233_EditedMovieDB2.Designer.cs">
       <DependentUpon>201903272050233_EditedMovieDB2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903300705567_AddedRequiredFieldsToMovieDB.cs" />
+    <Compile Include="Migrations\201903300705567_AddedRequiredFieldsToMovieDB.Designer.cs">
+      <DependentUpon>201903300705567_AddedRequiredFieldsToMovieDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300710191_AddedRangeToNumberInStockToMovieDB.cs" />
+    <Compile Include="Migrations\201903300710191_AddedRangeToNumberInStockToMovieDB.Designer.cs">
+      <DependentUpon>201903300710191_AddedRangeToNumberInStockToMovieDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -419,6 +427,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903272050233_EditedMovieDB2.resx">
       <DependentUpon>201903272050233_EditedMovieDB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300705567_AddedRequiredFieldsToMovieDB.resx">
+      <DependentUpon>201903300705567_AddedRequiredFieldsToMovieDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300710191_AddedRangeToNumberInStockToMovieDB.resx">
+      <DependentUpon>201903300710191_AddedRangeToNumberInStockToMovieDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

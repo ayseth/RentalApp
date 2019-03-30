@@ -37,6 +37,16 @@ namespace RentalApp.Controllers
         [HttpPost]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new NewMovieViewModel
+                {
+                    Movie = movie,
+                    Genre = _context.Genre.ToList()
+                };
+
+                return View("NewMovie", viewModel);
+            }
             if (movie.Id == 0) 
                 _context.Movies.Add(movie);
             else

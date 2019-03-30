@@ -20,11 +20,14 @@ namespace RentalApp.Models
         [Display(Name = "Genre")]
         public byte GenreId { get; set; }
 
+        [Required]
         [Display(Name = "Release Date" )]
         public DateTime? ReleaseDate { get; set; }
 
         public DateTime? DateAdded { get; set; }
 
+        [Required]
+        [Range(1,20)]
         [Display(Name = "Number In Stock")]
         public byte NumberInStock { get; set; }
     }
