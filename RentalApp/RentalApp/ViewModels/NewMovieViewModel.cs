@@ -9,6 +9,7 @@ namespace RentalApp.ViewModels
     public class NewMovieViewModel
     {
         public IEnumerable<Genre> Genre { get; set; }
+
         public Movie Movie { get; set; }
 
         public string Title
