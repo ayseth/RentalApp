@@ -266,6 +266,18 @@
     <Compile Include="Migrations\201903300710191_AddedRangeToNumberInStockToMovieDB.Designer.cs">
       <DependentUpon>201903300710191_AddedRangeToNumberInStockToMovieDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903300747460_RemovedClumnFromMovies.cs" />
+    <Compile Include="Migrations\201903300747460_RemovedClumnFromMovies.Designer.cs">
+      <DependentUpon>201903300747460_RemovedClumnFromMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300912034_EditedColums.cs" />
+    <Compile Include="Migrations\201903300912034_EditedColums.Designer.cs">
+      <DependentUpon>201903300912034_EditedColums.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300931212_EditedColum.cs" />
+    <Compile Include="Migrations\201903300931212_EditedColum.Designer.cs">
+      <DependentUpon>201903300931212_EditedColum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -433,6 +445,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903300710191_AddedRangeToNumberInStockToMovieDB.resx">
       <DependentUpon>201903300710191_AddedRangeToNumberInStockToMovieDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300747460_RemovedClumnFromMovies.resx">
+      <DependentUpon>201903300747460_RemovedClumnFromMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300912034_EditedColums.resx">
+      <DependentUpon>201903300912034_EditedColums.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300931212_EditedColum.resx">
+      <DependentUpon>201903300931212_EditedColum.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

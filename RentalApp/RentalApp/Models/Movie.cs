@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -13,12 +14,13 @@ namespace RentalApp.Models
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
-        
-        public Genre Genre { get; set; }
 
         [Required]
         [Display(Name = "Genre")]
-        public byte GenreId { get; set; }
+        public int Genre_Id { get; set; }
+
+        [ForeignKey("Genre_Id")]
+        public Genre Genre { get; set; }
 
         [Required]
         [Display(Name = "Release Date" )]

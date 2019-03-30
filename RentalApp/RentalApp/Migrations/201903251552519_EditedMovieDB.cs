@@ -16,7 +16,7 @@ namespace RentalApp.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
-            AddColumn("dbo.Movies", "GenreId", c => c.Byte(nullable: false));
+            AddColumn("dbo.Movies", "Genre_Id", c => c.Byte(nullable: false));
             AddColumn("dbo.Movies", "Genre_Id", c => c.Int(nullable: false));
             AlterColumn("dbo.Movies", "Name", c => c.String(nullable: false, maxLength: 255));
             AlterColumn("dbo.Movies", "NumberInStock", c => c.Byte(nullable: false));
@@ -33,7 +33,7 @@ namespace RentalApp.Migrations
             AlterColumn("dbo.Movies", "NumberInStock", c => c.Int(nullable: false));
             AlterColumn("dbo.Movies", "Name", c => c.String());
             DropColumn("dbo.Movies", "Genre_Id");
-            DropColumn("dbo.Movies", "GenreId");
+            DropColumn("dbo.Movies", "Genre_Id");
             DropTable("dbo.Genres");
         }
     }

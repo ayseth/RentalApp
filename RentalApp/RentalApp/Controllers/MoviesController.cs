@@ -58,7 +58,7 @@ namespace RentalApp.Controllers
 
                 movieInDb.Name = movie.Name;
                 movieInDb.ReleaseDate = movie.ReleaseDate;
-                movieInDb.Genre = movie.Genre;
+                movieInDb.Genre_Id = movie.Genre_Id;
                 movieInDb.NumberInStock = movie.NumberInStock;
             }
             _context.SaveChanges();

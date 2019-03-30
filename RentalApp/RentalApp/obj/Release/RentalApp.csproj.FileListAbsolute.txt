@@ -79,3 +79,6 @@ C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.cs
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.EditedMovieDB2.resources
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.AddedRequiredFieldsToMovieDB.resources
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.AddedRangeToNumberInStockToMovieDB.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.RemovedClumnFromMovies.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.EditedColums.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.EditedColum.resources

@@ -9,7 +9,7 @@ namespace RentalApp.Migrations
         {
             DropForeignKey("dbo.Movies", "Genre_Id", "dbo.Genres");
             DropIndex("dbo.Movies", new[] { "Genre_Id" });
-            AddColumn("dbo.Movies", "GenreId", c => c.Byte(nullable: false));
+            AddColumn("dbo.Movies", "Genre_Id", c => c.Byte(nullable: false));
             AlterColumn("dbo.Movies", "Genre_Id", c => c.Int());
             CreateIndex("dbo.Movies", "Genre_Id");
             AddForeignKey("dbo.Movies", "Genre_Id", "dbo.Genres", "Id");
@@ -20,7 +20,7 @@ namespace RentalApp.Migrations
             DropForeignKey("dbo.Movies", "Genre_Id", "dbo.Genres");
             DropIndex("dbo.Movies", new[] { "Genre_Id" });
             AlterColumn("dbo.Movies", "Genre_Id", c => c.Int(nullable: false));
-            DropColumn("dbo.Movies", "GenreId");
+            DropColumn("dbo.Movies", "Genre_Id");
             CreateIndex("dbo.Movies", "Genre_Id");
             AddForeignKey("dbo.Movies", "Genre_Id", "dbo.Genres", "Id", cascadeDelete: true);
         }
