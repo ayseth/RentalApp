@@ -14,7 +14,7 @@ namespace RentalApp.Controllers.Api
 
         public CustomersController()
         {
-            _context() = new ApplicationDbContext();
+            _context = new ApplicationDbContext();
         }
 
         // GET/api/customers
