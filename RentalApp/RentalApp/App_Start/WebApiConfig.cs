@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace RentalApp
 {
@@ -9,6 +11,11 @@ namespace RentalApp
     {
         public static void Register(HttpConfiguration config)
         {
+            //camel notation --> where the first letter in json of every word is lower case
+            var settings = config.Formatters.JsonFormatter.SerializerSettings;
+            settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            settings.Formatting = Formatting.Indented;
+
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

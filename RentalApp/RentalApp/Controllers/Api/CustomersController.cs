@@ -33,7 +33,7 @@ namespace RentalApp.Controllers.Api
             if (customer == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
-            return Mapper.Map<Customer, CustomerDto>();          //can't use selecct() as we return only one customer object
+            return Mapper.Map<Customer, CustomerDto>(customer);          //can't use selecct() as we return only one customer object
         } 
 
         // POST/api/customers

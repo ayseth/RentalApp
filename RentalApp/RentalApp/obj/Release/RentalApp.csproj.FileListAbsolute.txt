@@ -172,3 +172,11 @@ C:\Users\A.Y Seth\Desktop\RentalApp3\RentalApp\RentalApp\RentalApp\bin\Microsoft
 C:\Users\A.Y Seth\Desktop\RentalApp3\RentalApp\RentalApp\RentalApp\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\A.Y Seth\Desktop\RentalApp3\RentalApp\RentalApp\RentalApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\A.Y Seth\Desktop\RentalApp3\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.pdb
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\AutoMapper.dll
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Net.Http.Formatting.dll
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.dll
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.WebHost.dll
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\AutoMapper.xml
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Net.Http.Formatting.xml
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.xml
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.WebHost.xml
