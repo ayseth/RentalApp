@@ -6,7 +6,7 @@ using System.Web;
 
 namespace RentalApp.Dto
 {
-    public class MoviesDto
+    public class MovieDto
     {
         public int Id { get; set; }
 
