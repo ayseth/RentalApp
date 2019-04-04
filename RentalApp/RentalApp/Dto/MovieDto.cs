@@ -15,7 +15,7 @@ namespace RentalApp.Dto
         public string Name { get; set; }
 
         [Required]
-        public byte GenreId { get; set; }
+        public byte Genre_Id { get; set; }
 
         public DateTime DateAdded { get; set; }
 

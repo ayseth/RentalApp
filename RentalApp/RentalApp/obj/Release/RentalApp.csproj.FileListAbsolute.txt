@@ -180,3 +180,4 @@ C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\AutoMapper.xml
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Net.Http.Formatting.xml
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.xml
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.WebHost.xml
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.editeddto.resources
