@@ -28,7 +28,7 @@ else
                 <td>@Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.Id }, null)</td>
                 <td>@customer.MembershipType.Name</td>
                 <td>
-                    <button data-customer-id="@customer.Id" class="btn-link js-delete">Delete</button>
+                    <button data-customer-id="@customer.Id" class="btn btn-link js-delete">Delete</button>
                 </td>
             </tr>
         }
@@ -39,9 +39,10 @@ else
 @section scripts
 {
     <script>
-        $(document).ready(function() {
-            $("#customers .js-delete").on("click",
-                function() {
+        $(document).ready(function () {
+            $("#customers").DataTable();
+
+            $("#customers").on("click", ".js-delete", function() {            //this way there will be only one click handler for all delete buttons
                     var button = $(this);
 
                     bootbox.confirm("Are you sure you want ti delete this customer?", function(result) {
