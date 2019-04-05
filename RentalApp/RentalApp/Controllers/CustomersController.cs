@@ -70,9 +70,7 @@ namespace RentalApp.Controllers
         // GET: Customers
         public ViewResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();   //<--Db set defined in db context
-
-            return View(customers);
+            return View();
         }
 
         public ActionResult Details(int id)
