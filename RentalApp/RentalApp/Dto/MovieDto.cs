@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Web;
 
 namespace RentalApp.Dto
@@ -16,6 +17,9 @@ namespace RentalApp.Dto
 
         [Required]
         public byte Genre_Id { get; set; }
+
+        public GenreDto Genre { get; set; }
+        
 
         public DateTime DateAdded { get; set; }
 
