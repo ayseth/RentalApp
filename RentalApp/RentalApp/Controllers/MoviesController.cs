@@ -24,6 +24,7 @@ namespace RentalApp.Controllers
             _context.Dispose();
         }
 
+        [Authorize(Roles = RoleName.CanManageMovie)]
         public ActionResult NewMovie()
         {
             var genre = _context.Genre.ToList();
@@ -68,7 +69,10 @@ namespace RentalApp.Controllers
 
         public ViewResult Index()
         {
-            return View();  
+            if (User.IsInRole(RoleName.CanManageMovie))
+                return View("List");
+            return View("ReadOnlyList");
+
         }
 
         public ActionResult Details(int id)
