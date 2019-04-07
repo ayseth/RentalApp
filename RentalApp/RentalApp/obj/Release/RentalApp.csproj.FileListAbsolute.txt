@@ -182,3 +182,4 @@ C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.xml
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.WebHost.xml
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.editeddto.resources
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.SeedUsers.resources
+C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.AddDrivingLicenseToAppUser.resources
