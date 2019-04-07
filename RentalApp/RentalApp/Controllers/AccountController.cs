@@ -371,7 +371,12 @@ namespace RentalApp.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser
+                {
+                    UserName = model.Email,
+                    Email = model.Email,
+                    DrivingLicense = model.DrivingLicense
+                };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
