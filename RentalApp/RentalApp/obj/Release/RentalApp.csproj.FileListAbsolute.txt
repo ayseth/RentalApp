@@ -183,3 +183,4 @@ C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\bin\System.Web.Http.WebH
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.editeddto.resources
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.SeedUsers.resources
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.AddDrivingLicenseToAppUser.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.AddPhoneNumToApplicationUSer.resources
