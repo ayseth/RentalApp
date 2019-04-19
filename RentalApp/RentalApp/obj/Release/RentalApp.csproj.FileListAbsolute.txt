@@ -184,3 +184,8 @@ C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Mi
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.SeedUsers.resources
 C:\Users\A.Y Seth\Desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.AddDrivingLicenseToAppUser.resources
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.AddPhoneNumToApplicationUSer.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.Ado.dll
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.AspNet.dll
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.Core.dll
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.EF6.dll
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.Mvc5.dll
