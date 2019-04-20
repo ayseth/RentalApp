@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.Mvc;
 using RentalApp.Models;
 using RentalApp.ViewModels;
+using System.Runtime.Caching;
+using System.Runtime.Caching.MemoryCache;
 
 namespace RentalApp.Controllers
 {
@@ -70,6 +72,13 @@ namespace RentalApp.Controllers
         // GET: Customers
         public ViewResult Index()
         {
+            if (MemoryCache.Default["Genres"] == null)
+            {
+                MemoryCache.Default["Genres"] = _context.Genre.ToList();
+            }
+
+            var genres = MemoryCache.Default["Genres"] as IEnumerable<Genre>;
+
             return View();
         }
 
