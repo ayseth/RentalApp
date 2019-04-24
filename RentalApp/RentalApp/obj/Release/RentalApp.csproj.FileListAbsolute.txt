@@ -189,3 +189,5 @@ C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.AspNet.dll
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.Core.dll
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.EF6.dll
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.Mvc5.dll
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.addedNewRentalDB.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.editedMovieDB3.resources

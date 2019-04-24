@@ -97,6 +97,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -201,6 +202,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRenatlsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -209,6 +211,7 @@
     <Compile Include="Dto\GenreDto.cs" />
     <Compile Include="Dto\MembershipTypeDto.cs" />
     <Compile Include="Dto\MovieDto.cs" />
+    <Compile Include="Dto\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -341,6 +344,14 @@
     <Compile Include="Migrations\201904112149393_AddPhoneNumToApplicationUSer.Designer.cs">
       <DependentUpon>201904112149393_AddPhoneNumToApplicationUSer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904241912306_addedNewRentalDB.cs" />
+    <Compile Include="Migrations\201904241912306_addedNewRentalDB.Designer.cs">
+      <DependentUpon>201904241912306_addedNewRentalDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904242031210_editedMovieDB3.cs" />
+    <Compile Include="Migrations\201904242031210_editedMovieDB3.Designer.cs">
+      <DependentUpon>201904242031210_editedMovieDB3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -351,6 +362,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -706,6 +718,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904112149393_AddPhoneNumToApplicationUSer.resx">
       <DependentUpon>201904112149393_AddPhoneNumToApplicationUSer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904241912306_addedNewRentalDB.resx">
+      <DependentUpon>201904241912306_addedNewRentalDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904242031210_editedMovieDB3.resx">
+      <DependentUpon>201904242031210_editedMovieDB3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
