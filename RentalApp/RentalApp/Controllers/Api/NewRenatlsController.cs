@@ -20,7 +20,7 @@ namespace RentalApp.Controllers.Api
             if (newRental.MovieIds.Count == 0)
                 return BadRequest("No movie Id have been added")
 
-            var customer = _context.Customers.Single(
+            var customer = _context.Customers.SingleOrDefault(
                 c => c.Id == newRental.CustomerId);
             if (customer == null)
                 return BadRequest("Customer Id not valid")
