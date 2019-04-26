@@ -23,7 +23,7 @@ namespace RentalApp.Controllers.Api
             
 
             var movies = _context.Movies.Where(
-                m => newRental.MovieIds.Contains(m.Id));
+                m => newRental.MovieIds.Co0ntains(m.Id));
 
            foreach (var movie in movies)
             {
