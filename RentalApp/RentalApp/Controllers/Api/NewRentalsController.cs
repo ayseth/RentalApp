@@ -9,7 +9,7 @@ using RentalApp.Models;
 
 namespace RentalApp.Controllers.Api
 {
-    public class NewRenatlsController : ApiController
+    public class NewRentalsController : ApiController
     {
         private ApplicationDbContext _context;
 
@@ -26,9 +26,9 @@ namespace RentalApp.Controllers.Api
                 m => newRental.MovieIds.Co0ntains(m.Id));
 
            foreach (var movie in movies)
-            {
-                if (movie.NumberAvailable == 0)
-                    return BadRequest("Movie not available")
+           {
+               if (movie.NumberAvailable == 0)
+                   return BadRequest("Movie not available");
                 var rental = new Rental
                 {
                     Customer = customer,
