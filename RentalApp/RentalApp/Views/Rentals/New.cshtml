@@ -111,13 +111,13 @@
                         .done(function () {
                             toastr.success("Rentals successfully recorded");
 
-                            $("#customer").typeahead("val", "");
-                            $("#movie").typeahead("val", "");
-                            $("#movies").empty();
+                            $("#customer").typeahead("val", "");   //clear form
+                            $("#movie").typeahead("val", "");      //clear form
+                            $("#movies").empty();                  //clear form
 
                             vm = { MovieIds: [] };
 
-                            validator.resetForm();
+                            validator.resetForm(); //reset form in terms of validation
                         })
                         .fail(function () {
                             toastr.error("Something unexpected happened")
