@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4 com-sm-4">
+        <div class="col-md-4 col-sm-4">
             <ul id="movies" class="list-group"></ul>
         </div>
     </div>
@@ -38,8 +38,9 @@
     <script>
         $(document).ready(function () {
 
-            var vm = {
-                movieIds: []
+            var  vm = {
+                CustomerId: "",
+                MovieIds: []
             };
 
             var customers = new Bloodhound({
@@ -55,12 +56,12 @@
                 minLength: 3,
                 highlight: true
 
-                },{
+                }, {
                     name: 'customers',
                     display: 'name',
                     source: customers
                 }).on("typeahead:select", function(e, customer) {
-                vm.customerId = customer.id;
+                    vm.CustomerId = customer.id;
                 });
 
 
@@ -86,10 +87,10 @@
 
                 $("#movie").typeahead("val", "");
 
-                vx.movieIds.push(movie.id);
+                vm.MovieIds.push(movie.id);
             });
 
-            $("#newRental").submit(function(e) {
+            $("#newRental").submit(function (e) {
                 e.preventDefault();
 
                 $.ajax({
@@ -98,10 +99,10 @@
                         data: vm
                     })
                     .done(function() {
-                        
+                        toastr.success("Rentals successfully recorded")
                     })
                     .fail(function() {
-
+                        toastr.error("Something unexpected happened")
                     });
             });
 

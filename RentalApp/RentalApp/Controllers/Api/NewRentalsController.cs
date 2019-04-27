@@ -13,6 +13,11 @@ namespace RentalApp.Controllers.Api
     {
         private ApplicationDbContext _context;
 
+        public NewRentalsController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
        
         [HttpPost]
         public IHttpActionResult CreateNewRentals(NewRentalDto newRental)
@@ -23,12 +28,15 @@ namespace RentalApp.Controllers.Api
             
 
             var movies = _context.Movies.Where(
-                m => newRental.MovieIds.Contains(m.Id));
+                m => newRental.MovieIds.Contains(m.Id)).ToList();
 
            foreach (var movie in movies)
            {
                if (movie.NumberAvailable == 0)
                    return BadRequest("Movie not available");
+
+               movie.NumberAvailable--;
+
                 var rental = new Rental
                 {
                     Customer = customer,

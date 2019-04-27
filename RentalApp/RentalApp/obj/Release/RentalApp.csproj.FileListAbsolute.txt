@@ -191,3 +191,6 @@ C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.EF6.dll
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Glimpse.Mvc5.dll
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.addedNewRentalDB.resources
 C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\obj\Release\RentalApp.Migrations.editedMovieDB3.resources
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Toast.exe
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\Toaster.dll
+C:\Users\A.Y Seth\desktop\RentalApp\RentalApp\RentalApp\bin\ToolBelt.dll
